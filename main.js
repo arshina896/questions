@@ -1,75 +1,60 @@
-// 1
+// Find the largest of two numbers.
+function largest() {
+    let fstNumber;
+    let secNumber;
+    fstNumber = parseFloat(document.getElementById("fst-num").value);
+    secNumber = parseFloat(document.getElementById("sec-num").value);
 
-
-let int = 10;
-let char = 'a';
-let float = 10.5;
-let double = 20.1234567;
-let boolean = true;
-
-document.write('the integer=', int);
-document.write('<br>the character=', char);
-document.write('<br>the float=', float);
-document.write('<br>the double=', double);
-document.write('<br>the boolean=', boolean);
-
-// 2
-document.write('<br>')
-console.log("Hello World");
-document.write("Hello World")
-// alert("Hello World")
-// 3
-let num1 = 3;
-let num2 = 4;
-let sum = num1 + num2;
-document.write('<br>sum of tow numbers = ', sum);
-// 4
-let diff = num1 - num2;
-document.write('<br> difference = ', diff)
-// 5
-cube = num1 * num1 * num1;
-document.write('<br> cube of a number = ', cube);
-// 6
-let s1 = 2;
-let s2 = 3;
-let d;
-document.write('<br> before swap s1= ', s1, '    s2 = ', s2);
-d = s1;
-s1 = s2;
-s2 = d;
-document.write('<br> after swap s1= ', s1, '    s2 = ', s2);
-// 7 factorial
-function factorial(n) {
-    let fact = 1;
-    for (let i = 2; i <= n; i++) {
-        fact = fact * i;
-
+    if (fstNumber > secNumber) {
+        res.innerHTML = `the largest number is ${fstNumber} `;
+    } else {
+        res.innerHTML = `the largest number is ${secNumber} `;
     }
-    return fact;
-}
-let n=5;
-document.write('<br>factorial of 5', factorial(n));
-// 8
-let x=10;
-let y=8;
-document.write(x>y? "<br>x is large" :"y is largest");
-// 9
-let l1=20;
-let l2=30;
-let l3=40;
-if (l1>l2 && l1>l3) {
-    document.write('<br>the large number of 3 number',l1);
-} else if (l2>l1 && l2>l3) {
-    document.write('<br>the large number of 3 number',l2);
-} else{
-    document.write('<br>the large number of 3 number',l3);
-}
-// 10
-let test =98;
-if ((test%2)==0) {
-    document.write('<br>the ',test,' is even')
-} else {
-    document.write('<br> the ',test,' is not  even')
-}
-// 11
+};
+// ind the largest of three numbers.
+function threeLarge() {
+    let fstNum;
+    let secNum;
+    let thirdNum;
+    fstNum = parseFloat(document.getElementById("fst").value);
+    secNum = parseFloat(document.getElementById("sec").value);
+    thirdNum = parseFloat(document.getElementById("trd").value);
 
+    if ((fstNum > secNum) || (fstNum > thirdNum)) {
+        largenum.innerHTML = `the largest number is ${fstNum} `;
+    }
+     else if ((secNum > fstNum) || (secNum > thirdNum)) {
+
+        largenum.innerHTML = `the largest number is ${secNum} `;
+    }
+    else {
+        largenum.innerHTML = `the largest number is ${thirdNum} `;
+    }
+};
+// Check the given number is even or not
+function even(){
+let n= parseFloat(document.getElementById("num").value);
+if (n%2==0) {
+    evencheck.innerHTML = `${n} is even `;
+}else{
+    evencheck.innerHTML = `${n} is not even `;
+}
+};
+// Check the given number is odd or not
+function odd(){
+    let n= parseFloat(document.getElementById("oddnum").value);
+    if (n%2!=0) {
+        oddcheck.innerHTML = `${n} is odd `;
+    }else{
+        oddcheck.innerHTML = `${n} is not odd `;
+    }
+    };
+    // Check the given number is divisible by 2 and 5.
+    function divisible(){
+        let check= parseFloat(document.getElementById("chechdivisible").value);
+        if ((check%2==0) && (check%5==0)) {
+            divi.innerHTML = `${check} is divisible by 2 and 5`;
+        }else{
+            divi.innerHTML = `${check} is can not  divisible by 2 and 5`;
+        }
+    };
