@@ -18,120 +18,121 @@
             <div class="col">
                 <div class="card p-4">
                     <div class="card-heading">
-                        <h2 class="card-title"> largest of two numbers</h2>
+                        <h2 class="card-title"> prime or not</h2>
                     </div>
                     <div class="card-body">
                         <form action="">
                             <div class="mt-3">
-                                <input type="text" placeholder="enter first number" id="fst-num" class="form-control">
+                                <input type="number" placeholder="enter a number" id="check-prime" class="form-control">
                             </div>
-                            <div class="mt-3">
-                                <input type="text" placeholder="enter second number" id="sec-num" class="form-control">
-                            </div>
+
                             <div class="m-3 text-center">
-                                <!-- <button type="button"onclick="res.innerHtml=fst-num.value+sec-num.value" class="btn btn-primary btn-sm shadow">largest</button> -->
-                                <button type="button" onclick="largest()"
-                                    class="btn btn-primary btn-sm shadow">largest</button>
-                            </div>
-                        </form>
-                        <div class="card-footer">
-                            <div class="alert alert-dark" id="res"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card p-4">
-                    <div class="card-heading">
-                        <h2 class="card-title"> largest of three numbers</h2>
-                    </div>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="mt-3">
-                                <input type="text" placeholder="enter first number" id="fst" class="form-control">
-                            </div>
-                            <div class="mt-3">
-                                <input type="text" placeholder="enter second number" id="sec" class="form-control">
-                            </div>
-                            <div class="mt-3">
-                                <input type="text" placeholder="enter third number" id="trd" class="form-control">
-                            </div>
-                            <div class="m-3 text-center">
-                                <button type="button" onclick="threeLarge()"
-                                    class="btn btn-primary btn-sm shadow">largest</button>
-                            </div>
-                        </form>
-                        <div class="card-footer">
-                            <div class="alert alert-dark" id="largenum"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card p-4">
-                    <div class="card-heading">
-                        <h2 class="card-title"> Even</h2>
-                    </div>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="mt-3">
-                                <input type="text" placeholder="enter first number" id="num" class="form-control">
-                            </div>
-                         <div class="m-3 text-center">
-                                <button type="button" onclick="even()"
-                                    class="btn btn-primary btn-sm shadow">Even</button>
-                            </div>
-                        </form>
-                        <div class="card-footer">
-                            <div class="alert alert-dark" id="evencheck"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card p-4">
-                    <div class="card-heading">
-                        <h2 class="card-title">Odd</h2>
-                    </div>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="mt-3">
-                                <input type="text" placeholder="enter first number" id="oddnum" class="form-control">
-                            </div>
-                         <div class="m-3 text-center">
-                                <button type="button" onclick="odd()"
-                                    class="btn btn-primary btn-sm shadow">Even</button>
-                            </div>
-                        </form>
-                        <div class="card-footer">
-                            <div class="alert alert-dark" id="oddcheck"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card p-4">
-                    <div class="card-heading">
-                        <h2 class="card-title">divisible by 2 and 5</h2>
-                    </div>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="mt-3">
-                                <input type="text" placeholder="enter first number" id="chechdivisible" class="form-control">
-                            </div>
-                         <div class="m-3 text-center">
-                                <button type="button" onclick="divisible()"
+                                <button type="button" onclick="prime()"
                                     class="btn btn-primary btn-sm shadow">check</button>
                             </div>
                         </form>
                         <div class="card-footer">
-                            <div class="alert alert-dark" id="divi"></div>
+                            <div class="alert alert-dark" id="resu"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card p-4">
+                    <div class="card-heading">
+                        <h2 class="card-title"> palindrome</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="mt-3">
+                                <input type="text" placeholder="enter a string" id="check-pali" class="form-control">
+                            </div>
+
+                            <div class="m-3 text-center">
+                                <button type="button" onclick="palindrome()"
+                                    class="btn btn-primary btn-sm shadow">check</button>
+                            </div>
+                        </form>
+                        <div class="card-footer">
+                            <div class="alert alert-dark" id="palindro"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-4">
+                    <div class="card-heading">
+                        <h2 class="card-title"> reverse of a number</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="mt-3">
+                                <input type="number" placeholder="enter a number" id="number-reverse" class="form-control">
+                            </div>
+
+                            <div class="m-3 text-center">
+                                <button type="button" onclick="reverseNumber()"
+                                    class="btn btn-primary btn-sm shadow">check</button>
+                            </div>
+                        </form>
+                        <div class="card-footer">
+                            <div class="alert alert-dark" id="numrev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-4">
+                    <div class="card-heading">
+                        <h2 class="card-title">  numbers into words</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="mt-3">
+                                <input type="number" placeholder="enter a number" id="number-word" class="form-control">
+                            </div>
+
+                            <div class="m-3 text-center">
+                                <button type="button" onclick="numberToWords()"
+                                    class="btn btn-primary btn-sm shadow">check</button>
+                            </div>
+                        </form>
+                        <div class="card-footer">
+                            <div class="alert alert-dark" id="word"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-4">
+                    <div class="card-heading">
+                        <h2 class="card-title">Reverse a string.</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="mt-3">
+                                <input type="text" placeholder="enter a word" id="str-rev" class="form-control">
+                            </div>
+
+                            <div class="m-3 text-center">
+                                <button type="button" onclick="reverseString()"
+                                    class="btn btn-primary btn-sm shadow">check</button>
+                            </div>
+                        </form>
+                        <div class="card-footer">
+                            <div class="alert alert-dark" id="revstr"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
